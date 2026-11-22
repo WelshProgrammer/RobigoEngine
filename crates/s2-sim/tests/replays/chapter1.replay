@@ -1,0 +1,56 @@
+# The first Roman chapter: player 0 places the woodcutter, quarry and sawmill the opening asks
+# for and closes the two letters it opens. Once all three stand, the opening's end event
+# unlocks the forester. Written by tests/missions.rs.
+map-data DATA/MAPS/MISS200.WLD
+map-hash 0a18f752ca63b722
+script f048a4db9f433231
+players all
+animals yes
+goods normal
+mission 0 26d2df8441bdf25d
+bug-fixes off
+waypoints 0 0 0 1 1 1 2
+nations 0 0 0 1 1 1 2
+end 4000
+check 250 5faca90bf7e8ffb2
+check 500 6ed07b190a036d4e
+check 750 7370f936f3ab5fc8
+check 1000 bc49df1f6402d5ce
+check 1250 14dcdc00535deafc
+check 1500 d94afadccc37a738
+check 1750 af46d85059bb15a7
+check 2000 fb1d4223f945b1da
+check 2250 50eee46ea26391bc
+check 2500 b4c6f26377a3b515
+check 2750 3975fa675814f1a4
+check 3000 c8eef26b9f609024
+check 3250 632c799851cdce5f
+check 3500 af3c263b406b3daa
+check 3750 6b69b9ddd6f1486b
+check 4000 a91b3de66756d4e5
+# STEP PLAYER VERB ARGS
+0 0 build 31 38 0
+0 0 road 31 39
+0 0 step south-west
+0 0 step south-west
+0 0 step south-east
+0 0 step south-east
+0 0 step east
+0 0 step north-east
+0 0 step north-west
+0 0 step north-east
+0 0 step north-east
+0 0 build 35 38 2
+0 0 road 35 39
+0 0 step west
+0 0 step west
+0 0 build 33 35 5
+0 0 road 34 36
+0 0 step north-east
+0 0 step east
+0 0 step south-east
+0 0 step south-east
+0 0 step south-west
+0 0 step south-west
+13 0 letter-close
+2793 0 letter-close

@@ -1,0 +1,8 @@
+disallowed-types = [
+    { path = "std::collections::HashMap", reason = "iteration order differs between runs; use BTreeMap or a Vec" },
+    { path = "std::collections::HashSet", reason = "iteration order differs between runs; use BTreeSet or a Vec" },
+    { path = "std::time::Instant", reason = "the sim has no clock; time is counted in steps" },
+    { path = "std::time::SystemTime", reason = "the sim has no clock; time is counted in steps" },
+    { path = "f32", reason = "the sim is integer only" },
+    { path = "f64", reason = "the sim is integer only" },
+]

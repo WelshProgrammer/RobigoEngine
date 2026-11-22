@@ -1,0 +1,49 @@
+# Two players on a generated meadow build roads out of their headquarters, place sites at the
+# far flags and split a road with a flag while carriers work it.
+map-file meadow.wld
+map-hash 2e2eb6f84551fac2
+script none
+players all
+animals yes
+goods normal
+waypoints 0 1
+end 3000
+check 250 9f01bae3f33bfb8d
+check 500 38280f5b66648f8b
+check 750 d63215a112a08d9e
+check 1000 37084459a0a672aa
+check 1250 ee82a6a35e3546bc
+check 1500 06f026debf44e343
+check 1750 f3aa6ecbb456042c
+check 2000 3811ce04989d0514
+check 2250 00bb9c35a5e6cba0
+check 2500 683aca3eaa5d3486
+check 2750 1a17656b8c918a73
+check 3000 23285464dbce66c1
+# STEP PLAYER VERB ARGS
+5 0 road 16 17
+5 0 step east
+5 0 step east
+5 0 step east
+5 0 step east
+5 0 flag 20 17
+6 0 build 20 16 0
+40 0 road 16 17
+40 0 step west
+40 0 step west
+40 0 step west
+40 0 flag 13 17
+41 0 build 13 16 5
+60 1 road 48 49
+60 1 step east
+60 1 step east
+60 1 step east
+60 1 step east
+60 1 flag 52 49
+61 1 build 52 48 0
+600 0 flag 18 17
+900 1 road 48 49
+900 1 step south-west
+900 1 step south-west
+900 1 step south-west
+900 1 flag 47 52

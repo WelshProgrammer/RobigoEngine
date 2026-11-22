@@ -1,0 +1,24 @@
+[package]
+name = "s2-sim"
+description = "The deterministic game world: map nodes, objects, figures and the game's RNG"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+s2-formats = { workspace = true }
+s2-systems = { workspace = true }
+bitflags = { workspace = true }
+lzma-rust2 = { workspace = true }
+postcard = { workspace = true }
+serde = { workspace = true }
+tar = { workspace = true }
+thiserror = { workspace = true }
+
+[dev-dependencies]
+s2-data = { workspace = true }
+serde_json = { workspace = true }
+
+[lints]
+workspace = true

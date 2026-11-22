@@ -1,0 +1,28 @@
+# One player on the first Unlimited Play map builds a woodcutter east of the headquarters and
+# tries a sawmill to the west, where there is no room. Needs the player's own S2 data.
+map-data DATA/MAPS3/OMAP00.WLD
+map-hash 2cda04fad686109d
+script f048a4db9f433231
+players 1
+animals yes
+goods normal
+waypoints 0
+end 1200
+check 250 addacc21706ecef7
+check 500 45333c288ae1df74
+check 750 76b57d7271ac6e0d
+check 1000 6b00a0ee6963f594
+check 1200 816681bfd1f155bd
+0 0 road 33 54
+0 0 step east
+0 0 step east
+0 0 step east
+0 0 step east
+0 0 flag 37 54
+0 0 build 36 53 0
+0 0 road 33 54
+0 0 step west
+0 0 step west
+0 0 step west
+0 0 flag 30 54
+0 0 build 29 53 5

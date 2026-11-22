@@ -1,0 +1,4 @@
+If your copy of Settlers 2 is older than v1.51, such as the CD's v1.03, extract the official v1.51
+patch into this folder.
+
+The Gold Edition and the GOG installation are v1.51 already and need nothing here.

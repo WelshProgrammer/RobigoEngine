@@ -1,0 +1,52 @@
+# Player 0 builds a woodcutter and a sawmill site, removes the sawmill's flag with the site on it,
+# and demolishes the finished woodcutter, which burns down. Player 1 demolishes a site while its
+# builder is on the way.
+map-file meadow.wld
+map-hash 2e2eb6f84551fac2
+script none
+players all
+animals yes
+goods normal
+waypoints 0 1
+end 4200
+check 250 82218e94a9e77893
+check 500 17dc017a22bde6a2
+check 750 6942501f1a2591ef
+check 1000 e214b693ea6d01d0
+check 1250 3d88d74bc96107d4
+check 1500 8c1672e7121489b4
+check 1750 05b17ec53679ff2c
+check 2000 0251e1cd9caf2d5d
+check 2250 0b92bbfb1c7fc004
+check 2500 0db6013d3e431eb4
+check 2750 6b6c3bfc7c565e19
+check 3000 16214f36bab95e71
+check 3250 d02047145dc00c2e
+check 3500 7fec8383f8cb8ab4
+check 3750 dc744dfee2db774f
+check 4000 2760a0d7d75d3dfd
+check 4200 2a84dede1bb1e1eb
+# STEP PLAYER VERB ARGS
+5 0 road 16 17
+5 0 step east
+5 0 step east
+5 0 step east
+5 0 step east
+5 0 flag 20 17
+6 0 build 20 16 0
+40 0 road 16 17
+40 0 step west
+40 0 step west
+40 0 step west
+40 0 flag 13 17
+41 0 build 13 16 5
+60 1 road 48 49
+60 1 step east
+60 1 step east
+60 1 step east
+60 1 step east
+60 1 flag 52 49
+61 1 build 52 48 0
+120 1 demolish 52 48
+700 0 remove-flag 13 17
+1700 0 demolish 20 16

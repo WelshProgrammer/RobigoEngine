@@ -1,0 +1,2 @@
+# The sound fonts' own names, which the docs give as their makers write them.
+doc-valid-idents = ["GeneralUser", "MuseScore", "FluidR3", ".."]

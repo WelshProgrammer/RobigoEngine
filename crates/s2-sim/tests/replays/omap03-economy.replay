@@ -1,0 +1,696 @@
+# The four players on "The Green Island" place every economy building between them, metals
+# for player 1, each connected by road. Written by tests/economy.rs; needs the player's own S2
+# data.
+map-data DATA/MAPS3/OMAP03.WLD
+map-hash 0c40563b0a4d93b8
+script f048a4db9f433231
+players 4
+animals yes
+goods normal
+waypoints 0 0 0 0
+end 80000
+check 250 9d0735023a99c106
+check 500 7015eb2f5b654184
+check 750 eb2544076abae4a6
+check 1000 aa8936a841e4b204
+check 1250 beea8240fac9fcdc
+check 1500 78a22fb80ac9951f
+check 1750 044486d7d1adce2f
+check 2000 e04c3b540ae28ade
+check 2250 c33a8e4bdfd1057d
+check 2500 c60f8dfbc2798e89
+check 2750 aa7f0314fb367038
+check 3000 1044c5e2bf628385
+check 3250 e060bd3a7d2aa450
+check 3500 347ac9d6f462312b
+check 3750 15dfb9febe1a0500
+check 4000 addc4aa433e68d20
+check 4250 7d694b95a3047bfe
+check 4500 1ca279cfa42e5af2
+check 4750 cd7cc558da3a72a8
+check 5000 534c4b32b9127af2
+check 5250 b68830bafc8aa45c
+check 5500 d461c41b2baf873f
+check 5750 b559fd11079520ae
+check 6000 5746168eadf7a579
+check 6250 03ca4856c6022794
+check 6500 a1a7322c035cef5c
+check 6750 8e22bab9002ee2d9
+check 7000 d3bb83e3b27f6d19
+check 7250 3e1f121197700770
+check 7500 cc2da3246f4eb4f4
+check 7750 a2020829fc5d96dc
+check 8000 c973207dada890a3
+check 8250 10f887069072f7f8
+check 8500 894365196f7d6223
+check 8750 39f0c3d264cdee34
+check 9000 f7607e0cab61b65b
+check 9250 c516c421ef50cb8a
+check 9500 c9c992bfc4496580
+check 9750 1e3a26ced63fb3b9
+check 10000 b307656f93663881
+check 10250 4a4f0a247c780395
+check 10500 da6858e69bb6f964
+check 10750 0e3d0ee69b7a2dcc
+check 11000 301dbaa11ce57cb4
+check 11250 b88876d512b87426
+check 11500 c4e7e339f9d4bcde
+check 11750 82b0651dd31e23c9
+check 12000 2104ac829f5ccfdb
+check 12250 7242a85d12332323
+check 12500 c28295269d7e53ac
+check 12750 1b65a778583d6042
+check 13000 f56999e51090052b
+check 13250 cb0fa157b685f363
+check 13500 5b54c7e1e463d255
+check 13750 3af88e9b0227b81f
+check 14000 48361b7c7d624200
+check 14250 449e97c612844bab
+check 14500 be870f72e45001d0
+check 14750 33933b28d53573cc
+check 15000 caf7f4bc7d3d36ca
+check 15250 ab2d73d5844b25d6
+check 15500 b63203b7f4d65ee5
+check 15750 6c13086004281c3b
+check 16000 f059a5cc6b3280f7
+check 16250 3680fc041144d0fc
+check 16500 c7c83fb1d8f59786
+check 16750 5ef6da1e78e42c8d
+check 17000 08ce8e4d1ab6dbe4
+check 17250 10ceb3fde129311a
+check 17500 119a01cff4074412
+check 17750 397d34bb25fe96ce
+check 18000 d2ba51fc1101d098
+check 18250 7dc999caa2b0b50b
+check 18500 b4f506305e1175f0
+check 18750 717b4a20f34ef6f7
+check 19000 8c790b84db603c5a
+check 19250 08be60c71bf22767
+check 19500 7b1886c85d45f3e5
+check 19750 cef3314a5b0c91b4
+check 20000 c40f45698834f7b4
+check 20250 1847f085ac713a75
+check 20500 0ffa41c3d9fb3dca
+check 20750 c61f131ea63f34d3
+check 21000 8d5ca3d39abbdb3d
+check 21250 c43ee4d044f985b5
+check 21500 6760228a36a2dfd3
+check 21750 3c5d40f56627242a
+check 22000 1dc57c02ad32251b
+check 22250 64c4497e03dd10a7
+check 22500 51c8367d4c79f197
+check 22750 b904b7ce15e51d37
+check 23000 bbafe7bfd4987dd4
+check 23250 3ce0f5e619d7272c
+check 23500 16c9a2fda31219e5
+check 23750 5e43ea786b1e05d7
+check 24000 10e042b2f2df13c4
+check 24250 a766291de00e62b1
+check 24500 f795eefcd300894d
+check 24750 474286a8c0106a85
+check 25000 2f20c73ecf146f43
+check 25250 6425b5705850600e
+check 25500 9c8a08328545f5ff
+check 25750 b526cbef93a2752a
+check 26000 67d57df6cb7b6fa1
+check 26250 c36989d95a05feed
+check 26500 1993ccb64f4b1291
+check 26750 bd9d007fd2675674
+check 27000 8101b88ba06e6821
+check 27250 ab9ead52323e3ab4
+check 27500 db76c8ff36869f47
+check 27750 5c6a6287b02436aa
+check 28000 912941013e73b93c
+check 28250 f8fb85560b3a917d
+check 28500 0a78699926d136d4
+check 28750 b3d32a44d7315597
+check 29000 17bc30d279414fc9
+check 29250 bc3cc223c8fff7a9
+check 29500 95fb3bf331312451
+check 29750 e06e7d43085fbd17
+check 30000 8fba34a4391f06df
+check 30250 c9eaefacd65f9adf
+check 30500 7616809a985d0565
+check 30750 a24a63ecd7b4a367
+check 31000 3748156066d8adac
+check 31250 af2ee5b4dc2e935e
+check 31500 92649bc0221c5272
+check 31750 6432896fc21b84af
+check 32000 3cca32d1bf8368b7
+check 32250 c41a2aa0ad39e9c7
+check 32500 53105389a1d83a09
+check 32750 c9486c53f41f821f
+check 33000 ad1519a3fc7828d0
+check 33250 50d0bec844ae4c88
+check 33500 0c99474217d71600
+check 33750 17761c0124b97d97
+check 34000 12dad1e32157ff82
+check 34250 43ebfb38158f4fcb
+check 34500 978fd72a28d70075
+check 34750 85c8d6a6beca0eff
+check 35000 d21b252e9be76cae
+check 35250 e6ab7dcc4c2eca40
+check 35500 0963069a1af554ad
+check 35750 0bfc6859f6da4ff8
+check 36000 a459d38f99e3567b
+check 36250 f3df742f38c86c53
+check 36500 a1b2ae829ed9344a
+check 36750 199aa262da6294f8
+check 37000 2a438e5178b45ccb
+check 37250 c3ae20dc90c198b3
+check 37500 f43f5e36d6549f80
+check 37750 2c2ee78ff3024343
+check 38000 24d6f5efdca49391
+check 38250 5d9e8e9127750005
+check 38500 d6bb24edfa397cce
+check 38750 b936183c87bc7488
+check 39000 5a5bb7d2d3bd27cb
+check 39250 d31423cf55c763a9
+check 39500 d26dd0d7030c11e8
+check 39750 c49c6a87a6b8a6b2
+check 40000 ef7efaf840c8e06b
+check 40250 55f1667f8c8d6315
+check 40500 fd0423fa47ded7dd
+check 40750 564da0b702577682
+check 41000 2e42d976c8a61493
+check 41250 43e836f7af3d1d9a
+check 41500 45134c8819afd964
+check 41750 a1ad347f9b9d9bad
+check 42000 5383420a731accf6
+check 42250 17fc45d4b0b7ce44
+check 42500 61f6129261e824a7
+check 42750 d542e88af9b10dcc
+check 43000 0d6ecda2a14d6f86
+check 43250 aaff458a8c4a2054
+check 43500 fe904e6a790c3d42
+check 43750 2625e51a0c665966
+check 44000 0cb41c24feb455e2
+check 44250 9e5fe71ed79e640a
+check 44500 736639c5af5b16ad
+check 44750 d626f50d063f6c0b
+check 45000 3e07761f5125e948
+check 45250 9f2b0e7dc7d499c7
+check 45500 5594376e4aca322b
+check 45750 7e181dc9536f6f0c
+check 46000 7b45dd988687abf9
+check 46250 a99c4a15a3d04493
+check 46500 9c11957751932163
+check 46750 c67e0d7b64414e1f
+check 47000 655d526e40c09047
+check 47250 2312c40208675fcb
+check 47500 0ed683f12ae9c328
+check 47750 21a7d677c55a0a3c
+check 48000 5735aeb1d4f6f441
+check 48250 a3e1cb141b1dea14
+check 48500 3e7a17997bb020bd
+check 48750 3e215be4ec7ba5e8
+check 49000 f581029b44eb84b2
+check 49250 c55a2173d14d4f17
+check 49500 8998f02fb8d4ab04
+check 49750 b14436b95246d729
+check 50000 ec0f148e01a46af0
+check 50250 2be320fc824e52a1
+check 50500 f3daa8524e11aa51
+check 50750 c8b4083552f7b3b9
+check 51000 77234b64aa1c5d1f
+check 51250 d77b684b0b5f65df
+check 51500 335c7bc7281d53bd
+check 51750 4c08db5c0449c157
+check 52000 cef10a07c2219df1
+check 52250 382e55e01f19b17e
+check 52500 a62f5ec22656f6ac
+check 52750 9b89462e020d4776
+check 53000 3cf926b13da49af4
+check 53250 2a9118bf6076b93a
+check 53500 94ef751007f133c8
+check 53750 e78d0f395b9154f9
+check 54000 da8d802e4b6e4df7
+check 54250 f683ed188d5d5c9c
+check 54500 7f9553cbf2730696
+check 54750 61297b18caf7ad08
+check 55000 bc78e788a6a4a368
+check 55250 33281b983e99e849
+check 55500 95c697b93a62ad44
+check 55750 871533dff6a32ab1
+check 56000 4d620860017770fd
+check 56250 6ef5dba90c56b1c8
+check 56500 3d4c268e64a40920
+check 56750 9732f2815b43a627
+check 57000 86d8254cd760900c
+check 57250 9d1b2dff4cda6516
+check 57500 e1455a98545cc8ee
+check 57750 d2f6ca533b2012be
+check 58000 fefa36eb1d1eea00
+check 58250 e36ac54bfbf6a62c
+check 58500 98f308e0962a3377
+check 58750 d9464dde3be69127
+check 59000 6a59e2496feb4115
+check 59250 1a7f543771736c3f
+check 59500 6a05d9bd0d54e3a6
+check 59750 016881f8ad8afbe7
+check 60000 23fcb212ab5f4ee7
+check 60250 0f13c006dcc3a84b
+check 60500 35fe0209bcae012f
+check 60750 bc0dc7bc548f83c1
+check 61000 f6007c7cdcd14616
+check 61250 dac4436b3cb8cd74
+check 61500 c4a5e201f433fa61
+check 61750 ae5bd0400892523c
+check 62000 fd4bd96b4fb2c81c
+check 62250 ca78d5ff893ecd0a
+check 62500 2d15ddb0325d9753
+check 62750 ace7fe0fd5ca4534
+check 63000 91e355bdfc8110a9
+check 63250 e482a62eec9c2f3d
+check 63500 1a02bbc179890183
+check 63750 bb8d7383c77d6454
+check 64000 dd958f6f5ed9af65
+check 64250 b60e4999e072e82c
+check 64500 16c70b5c3bbb16e0
+check 64750 0faf3b21e8685e9b
+check 65000 840532019ecd83e0
+check 65250 3a73821384a68c6a
+check 65500 c332251b01353244
+check 65750 077ad34cbd5f4877
+check 66000 f9568f6914ca3bdc
+check 66250 31cefb31cee9cc8b
+check 66500 165b00deac58d422
+check 66750 f4092af39659f1f5
+check 67000 3dcf4b4bff6aa144
+check 67250 b7fb1cffd86d0c54
+check 67500 1ef21b7e0cb0a5a1
+check 67750 838a3deb5782ad2a
+check 68000 124661a8bea9ff61
+check 68250 dfe55d4ed783447d
+check 68500 e50fdcd194d275d9
+check 68750 907b4ca7d1ea3f21
+check 69000 7c31b3f4a6682cc5
+check 69250 712c94e5b1d611e9
+check 69500 2799fd39fc1a7f2f
+check 69750 35b46c3ace9648ed
+check 70000 40875fe8ff5c6564
+check 70250 29c9c6e63e0c9b9a
+check 70500 28bb81d58de380d4
+check 70750 a337a3df38a294b4
+check 71000 f12709e79cf0f905
+check 71250 98da870f9b9ee829
+check 71500 083690f35dab6b6d
+check 71750 e6de47e3afdbfa4f
+check 72000 0c5516f1ac9d7df2
+check 72250 630ee47e5316f64a
+check 72500 5aaade671a4d0606
+check 72750 9cf3dc99c91203ed
+check 73000 6ef83492b6675242
+check 73250 1390db60b5182170
+check 73500 05f547ad29808962
+check 73750 938b9b46d4f3bc92
+check 74000 81876e5e28f1bd8e
+check 74250 b37eff837a509d69
+check 74500 8bd4b9ca645c21fa
+check 74750 954741b7e82bfb7e
+check 75000 3635f97bf2013528
+check 75250 c0365eb996b1cf77
+check 75500 3d626f8d38026997
+check 75750 3695fec24c8dfd61
+check 76000 33d23ce4781de15b
+check 76250 63681e641e77a5ec
+check 76500 4399eb9c915f557b
+check 76750 2fad03d0014f73c9
+check 77000 9867baa1ff10c02d
+check 77250 4e3ba904d7eedd81
+check 77500 4b5bfa95d7cdc54f
+check 77750 434b73f0341d834c
+check 78000 f3aa7d0f1e57cbfd
+check 78250 81dc43f77153cc86
+check 78500 7d9173d7b536e871
+check 78750 48473239f9843bdd
+check 79000 965fa5afe17f2792
+check 79250 c34e6de3ef1634fe
+check 79500 ef51c526e4417f3a
+check 79750 6f8c62b77cb97611
+check 80000 3946d9796158155d
+# STEP PLAYER VERB ARGS
+0 1 build 74 19 20
+0 1 road 75 20
+0 1 step east
+0 1 step south-east
+0 1 step south-east
+0 1 step south-east
+0 1 step south-east
+0 1 step south-east
+0 1 step south-east
+0 1 step south-west
+0 1 step south-west
+0 1 flag 76 21
+0 1 flag 77 23
+0 1 flag 78 25
+0 1 build 74 21 18
+0 1 road 75 22
+0 1 step east
+0 1 step north-east
+0 1 build 78 20 19
+0 1 road 78 21
+0 1 step west
+0 1 step west
+0 1 build 79 27 5
+0 1 road 80 28
+0 1 step west
+0 1 step west
+0 1 build 78 29 12
+0 1 road 79 30
+0 1 step north-east
+0 1 step north-east
+0 1 build 76 29 13
+0 1 road 77 30
+0 1 step east
+0 1 step east
+0 1 build 79 25 14
+0 1 road 80 26
+0 1 step east
+0 1 step north-east
+0 1 step north-west
+0 1 step west
+0 1 step west
+0 1 step south-west
+0 1 flag 81 25
+0 1 flag 80 24
+0 1 build 79 23 15
+0 1 road 80 24
+0 1 step north-east
+0 1 step north-west
+0 1 step west
+0 1 step north-west
+0 1 flag 80 22
+0 1 build 70 25 0
+0 1 road 71 26
+0 1 step south-east
+0 1 step south-east
+0 1 step east
+0 1 step east
+0 1 step east
+0 1 step east
+0 1 step east
+0 1 step east
+0 1 flag 72 28
+0 1 flag 74 28
+0 1 flag 76 28
+0 1 build 73 31 1
+0 1 road 74 32
+0 1 step west
+0 1 step north-west
+0 1 step north-west
+0 1 step north-west
+0 1 step north-east
+0 1 flag 72 31
+0 1 build 72 22 2
+0 1 road 72 23
+0 1 step east
+0 1 step east
+0 1 step north-east
+0 1 build 78 32 3
+0 1 road 78 33
+0 1 step north-east
+0 1 step north-east
+0 1 step north-west
+0 1 build 75 30 4
+0 1 road 75 31
+0 1 step east
+0 1 step north-east
+0 1 build 75 27 29
+0 1 road 76 28
+0 1 step south-west
+0 1 step south-east
+0 1 step east
+0 3 build 34 60 6
+0 3 road 34 61
+0 3 step west
+0 3 step south-west
+0 3 step south-west
+0 3 build 32 65 6
+0 3 road 33 66
+0 3 step east
+0 3 step north-east
+0 3 step north-west
+0 3 step north-west
+0 3 step west
+0 3 flag 34 65
+0 3 build 35 62 5
+0 3 demolish 35 62
+0 3 build 35 58 5
+0 3 demolish 35 58
+0 3 build 36 60 5
+0 3 demolish 36 60
+0 3 build 37 62 5
+0 3 road 37 63
+0 3 step south-west
+0 3 step west
+0 3 step south-west
+0 3 step west
+0 3 build 35 62 10
+0 3 demolish 35 62
+0 3 build 35 58 10
+0 3 demolish 35 58
+0 3 build 36 60 10
+0 3 demolish 36 60
+0 3 build 35 66 10
+0 3 road 35 67
+0 3 step east
+0 3 step north-east
+0 3 step north-east
+0 3 step north-east
+0 3 step north-west
+0 3 flag 37 66
+0 3 build 35 62 11
+0 3 demolish 35 62
+0 3 build 35 58 11
+0 3 demolish 35 58
+0 3 build 36 60 11
+0 3 demolish 36 60
+0 3 build 36 65 11
+0 3 road 37 66
+0 3 step west
+0 3 step south-west
+0 3 build 35 62 17
+0 3 demolish 35 62
+0 3 build 35 58 17
+0 3 demolish 35 58
+0 3 build 36 60 17
+0 3 demolish 36 60
+0 3 build 26 62 17
+0 3 road 26 63
+0 3 step north-east
+0 3 step north-east
+0 3 step east
+0 3 step east
+0 3 step east
+0 3 step north-east
+0 3 step north-east
+0 3 step north-east
+0 3 step north-east
+0 3 step east
+0 3 step east
+0 3 step east
+0 3 step south-east
+0 3 step south-east
+0 3 step south-east
+0 3 step south-east
+0 3 step south-east
+0 3 step south-west
+0 3 flag 27 61
+0 3 flag 29 61
+0 3 flag 31 60
+0 3 flag 32 58
+0 3 flag 33 57
+0 3 flag 35 57
+0 3 build 35 62 16
+0 3 demolish 35 62
+0 3 build 35 58 16
+0 3 demolish 35 58
+0 3 build 36 60 16
+0 3 demolish 36 60
+0 3 build 37 59 16
+0 3 road 38 60
+0 3 step south-east
+0 3 step south-east
+0 3 step south-west
+0 3 step west
+0 3 flag 39 62
+0 3 build 31 67 0
+0 3 demolish 31 67
+0 3 build 33 56 0
+0 3 road 33 57
+0 3 step north-east
+0 3 step east
+0 3 step south-east
+0 3 build 31 67 1
+0 3 demolish 31 67
+0 3 build 27 60 1
+0 3 road 27 61
+0 3 step north-east
+0 3 step east
+0 3 step south-east
+0 3 build 24 61 30
+0 3 road 25 62
+0 3 step south-east
+0 3 step east
+0 3 build 25 59 30
+0 3 demolish 25 59
+0 3 build 28 55 30
+0 3 road 29 56
+0 3 step east
+0 3 step east
+0 3 step south-east
+0 3 step south-east
+0 3 flag 31 56
+0 2 build 22 79 6
+0 2 road 23 80
+0 2 step west
+0 2 step west
+0 2 step north-west
+0 2 step north-east
+0 2 flag 21 80
+0 2 build 23 82 8
+0 2 road 23 83
+0 2 step west
+0 2 step west
+0 2 step north-west
+0 2 step north-west
+0 2 step north-east
+0 2 flag 21 83
+0 2 build 21 72 0
+0 2 road 21 73
+0 2 step west
+0 2 step west
+0 2 step south-west
+0 2 step west
+0 2 step west
+0 2 step west
+0 2 step west
+0 2 step west
+0 2 step south-west
+0 2 step south-east
+0 2 step south-east
+0 2 step south-east
+0 2 step south-west
+0 2 step south-east
+0 2 step east
+0 2 step south-east
+0 2 step south-east
+0 2 step south-east
+0 2 step south-east
+0 2 step east
+0 2 step east
+0 2 step north-east
+0 2 step east
+0 2 flag 19 73
+0 2 flag 18 74
+0 2 flag 16 74
+0 2 flag 14 74
+0 2 flag 14 76
+0 2 flag 15 78
+0 2 flag 15 80
+0 2 flag 16 81
+0 2 flag 17 83
+0 2 flag 19 84
+0 2 build 24 83 2
+0 2 road 25 84
+0 2 step north-east
+0 2 step north-west
+0 2 step west
+0 2 step south-west
+0 2 flag 25 82
+0 2 build 20 70 30
+0 2 road 20 71
+0 2 step south-west
+0 2 step south-west
+0 0 build 21 29 6
+0 0 road 22 30
+0 0 step west
+0 0 step west
+0 0 step north-west
+0 0 step north-east
+0 0 step north-east
+0 0 flag 20 30
+0 0 build 19 21 7
+0 0 road 20 22
+0 0 step west
+0 0 step south-west
+0 0 step south-west
+0 0 step south-west
+0 0 step south-west
+0 0 step south-west
+0 0 step south-east
+0 0 step east
+0 0 step east
+0 0 step north-east
+0 0 step east
+0 0 flag 18 23
+0 0 flag 17 25
+0 0 flag 16 27
+0 0 flag 18 28
+0 0 build 22 31 9
+0 0 demolish 22 31
+0 0 build 25 23 9
+0 0 road 26 24
+0 0 step west
+0 0 step north-west
+0 0 step north-east
+0 0 step north-west
+0 0 step north-west
+0 0 step north-west
+0 0 step west
+0 0 step west
+0 0 step west
+0 0 step west
+0 0 step north-west
+0 0 step west
+0 0 step south-west
+0 0 step south-east
+0 0 step south-west
+0 0 step south-east
+0 0 step south-east
+0 0 flag 24 23
+0 0 flag 24 21
+0 0 flag 23 19
+0 0 flag 21 19
+0 0 flag 19 19
+0 0 flag 18 18
+0 0 flag 18 20
+0 0 build 21 24 0
+0 0 road 21 25
+0 0 step south-west
+0 0 step south-west
+0 0 build 23 28 1
+0 0 demolish 23 28
+0 0 build 17 30 1
+0 0 road 17 31
+0 0 step east
+0 0 step east
+0 0 step north-east
+0 0 build 24 32 2
+0 0 road 24 33
+0 0 step north-east
+0 0 step north-west
+0 0 step north-east
+0 0 step east
+0 0 step north-east
+0 0 step north-east
+0 0 step north-east
+0 0 step north-west
+0 0 step north-east
+0 0 step north-west
+0 0 step west
+0 0 flag 24 31
+0 0 flag 26 30
+0 0 flag 27 28
+0 0 flag 27 26
+0 0 build 20 31 30
+0 0 demolish 20 31
+0 0 build 22 31 30
+0 0 demolish 22 31
+0 0 build 22 33 30
+0 0 road 23 34
+0 0 step east
+0 0 step north-east
+0 1 distribution 2 0 80
+0 1 distribution 2 1 80

@@ -1,0 +1,14 @@
+[package]
+name = "s2-fuzz-seed"
+description = "Builds the fuzz seed corpus from the player's own game data"
+version = "0.1.0"
+edition = "2024"
+license = "GPL-3.0-or-later"
+publish = false
+
+[dependencies]
+s2-data = { path = "../../crates/s2-data" }
+s2-formats = { path = "../../crates/s2-formats" }
+
+[lints]
+workspace = true

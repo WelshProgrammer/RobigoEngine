@@ -1,0 +1,32 @@
+/target
+/.idea
+__pycache__/
+
+# Original game data never enters the repo.
+*.bin
+*.cue
+*.iso
+*.gog
+*.ins
+*.LST
+*.lst
+*.WLD
+*.wld
+*.RTX
+*.rtx
+*.SMK
+*.smk
+*.EXE
+/data/
+/s2data/
+
+# Maps made by s2-mapgen hold no original data.
+!/crates/s2-sim/tests/replays/meadow.wld
+!/crates/s2-sim/tests/replays/lake.wld
+
+# Robigo's own mission scripts hold no original data.
+!/crates/s2-sim/tests/replays/people.rtx
+__pycache__/
+
+# What the packaging scripts under dist/ make.
+/out/

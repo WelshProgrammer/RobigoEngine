@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Robigo
+Comment=A modern engine for The Settlers II, written in Rust
+Exec=robigo
+Icon=robigo
+Categories=Game;StrategyGame;
+Terminal=false

@@ -1,0 +1,5 @@
+Copy your Settlers 2 into this folder: the contents of the CD, the Gold Edition's ISO or its BIN
+and CUE files, or a GOG installation.
+
+Robigo reads these files the first time it starts and bakes what it needs into its own folder. It
+never changes anything here.

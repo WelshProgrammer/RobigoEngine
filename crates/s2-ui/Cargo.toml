@@ -1,0 +1,20 @@
+[package]
+name = "s2-ui"
+description = "The interface: the painter, the skin, the widget core and the game's windows"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+s2-assets = { workspace = true }
+s2-formats = { workspace = true }
+s2-render = { workspace = true }
+s2-sim = { workspace = true }
+s2-systems = { workspace = true }
+
+[dev-dependencies]
+s2-data = { workspace = true }
+
+[lints]
+workspace = true
