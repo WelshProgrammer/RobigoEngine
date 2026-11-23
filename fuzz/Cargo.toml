@@ -1,0 +1,123 @@
+[package]
+name = "s2-fuzz"
+description = "libFuzzer targets for the s2-formats parsers"
+version = "0.1.0"
+edition = "2024"
+license = "GPL-3.0-or-later"
+publish = false
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+s2-formats = { path = "../crates/s2-formats" }
+
+[lints]
+workspace = true
+
+[workspace]
+members = [".", "seed"]
+resolver = "3"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+missing_debug_implementations = "warn"
+
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+
+[profile.release]
+debug = 1
+
+[[bin]]
+name = "lst"
+path = "fuzz_targets/lst.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "idx"
+path = "fuzz_targets/idx.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "bob"
+path = "fuzz_targets/bob.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "iff"
+path = "fuzz_targets/iff.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "map_wld"
+path = "fuzz_targets/map_wld.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "map_v102"
+path = "fuzz_targets/map_v102.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "map_rle"
+path = "fuzz_targets/map_rle.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "text"
+path = "fuzz_targets/text.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "rtx"
+path = "fuzz_targets/rtx.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "music"
+path = "fuzz_targets/music.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "smacker"
+path = "fuzz_targets/smacker.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "save_slot"
+path = "fuzz_targets/save_slot.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "save_meta"
+path = "fuzz_targets/save_meta.rs"
+test = false
+doc = false
+bench = false

@@ -1,0 +1,142 @@
+# Builds the Linux and Windows releases. A tag named v<version>, such as v0.1.0, builds them and
+# publishes a GitHub release with the files and their SHA256SUMS; a tag with a suffix, such as
+# v0.1.0-rc1, publishes a pre-release. Running the workflow by hand with a version builds the same
+# files and keeps them as the run's artifacts without publishing anything.
+
+name: Release
+
+on:
+  push:
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+*"
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to build, without the leading v (the files stay as artifacts)"
+        required: true
+
+permissions:
+  contents: read
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  version:
+    runs-on: ubuntu-24.04
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - id: version
+        env:
+          INPUT_VERSION: ${{ inputs.version }}
+        run: |
+          if [ "$GITHUB_REF_TYPE" = tag ]; then version=${GITHUB_REF_NAME#v}; else version=$INPUT_VERSION; fi
+          if ! printf '%s' "$version" | grep -Eq '^[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z.]+)?$'; then
+            echo "'$version' is not a version such as 0.1.0 or 0.1.0-rc1" >&2
+            exit 1
+          fi
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+
+  linux:
+    needs: version
+    runs-on: ubuntu-24.04
+    container: rust:1.99-bookworm
+    steps:
+      - uses: actions/checkout@v7
+      - name: Install the build tools
+        run: |
+          apt-get update -qq
+          apt-get install -y -qq --no-install-recommends cmake ninja-build pkg-config python3-venv \
+            libx11-dev libxext-dev libxrandr-dev libxcursor-dev libxi-dev libxss-dev libxtst-dev libxfixes-dev \
+            libwayland-dev libxkbcommon-dev libdecor-0-dev libegl-dev libgles-dev libdrm-dev libgbm-dev \
+            libasound2-dev libpulse-dev libpipewire-0.3-dev libudev-dev libdbus-1-dev
+          python3 -m venv /opt/zig
+          /opt/zig/bin/pip install --quiet cargo-zigbuild==0.24.1 ziglang==0.17.1
+          echo /opt/zig/bin >> "$GITHUB_PATH"
+      - name: Build and package
+        env:
+          VERSION: ${{ needs.version.outputs.version }}
+        run: dist/linux/package.sh "$VERSION"
+      - uses: actions/upload-artifact@v7
+        with:
+          name: linux
+          path: |
+            out/*.tar.gz
+            out/*.AppImage
+            out/*.deb
+          if-no-files-found: error
+
+  windows:
+    needs: version
+    runs-on: windows-2022
+    env:
+      ROBIGO_VERSION: ${{ needs.version.outputs.version }}
+    steps:
+      - uses: actions/checkout@v7
+      - name: Install Rust 1.99
+        run: |
+          rustup toolchain install 1.99 --profile minimal
+          rustup default 1.99
+      - name: Build
+        run: cargo build --release --locked -p robigo
+      - name: Package
+        shell: pwsh
+        run: dist/windows/package.ps1 $env:ROBIGO_VERSION
+      - uses: actions/upload-artifact@v7
+        with:
+          name: windows
+          path: out/
+          if-no-files-found: error
+
+  windows-setup:
+    needs: [version, windows]
+    runs-on: ubuntu-24.04
+    env:
+      VERSION: ${{ needs.version.outputs.version }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/download-artifact@v8
+        with:
+          name: windows
+          path: out/
+      - name: Install NSIS
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq --no-install-recommends nsis
+      - name: Build the setup
+        run: >
+          makensis -V2 -DVERSION="$VERSION" -DSOURCE="$PWD/out/robigo-$VERSION-windows-x86_64"
+          -DICON="$PWD/assets/icons/robigo.ico"
+          -DOUTFILE="$PWD/out/robigo-$VERSION-windows-x86_64-setup.exe" dist/windows/robigo.nsi
+      - uses: actions/upload-artifact@v7
+        with:
+          name: windows-setup
+          path: out/*-setup.exe
+          if-no-files-found: error
+
+  release:
+    if: github.ref_type == 'tag'
+    needs: [version, linux, windows, windows-setup]
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    env:
+      VERSION: ${{ needs.version.outputs.version }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          path: out/
+          merge-multiple: true
+      - name: Publish
+        run: |
+          cd out
+          files="robigo-$VERSION-linux-x86_64.tar.gz robigo-$VERSION-linux-x86_64.AppImage
+            robigo-$VERSION-linux-x86_64.deb robigo-$VERSION-windows-x86_64.zip
+            robigo-$VERSION-windows-x86_64-setup.exe"
+          sha256sum $files > SHA256SUMS
+          case "$VERSION" in *-*) pre=--prerelease ;; *) pre= ;; esac
+          gh release create "$GITHUB_REF_NAME" $files SHA256SUMS --repo "$GITHUB_REPOSITORY" \
+            --verify-tag --title "Robigo $VERSION" $pre \
+            --notes "Robigo $VERSION for Linux and Windows. You need your own copy of Settlers 2: the README says which copies work."

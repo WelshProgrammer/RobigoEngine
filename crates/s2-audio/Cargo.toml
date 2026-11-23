@@ -1,0 +1,21 @@
+[package]
+name = "s2-audio"
+description = "Sound effects: the original's request path, its slots, its voices and its mix"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+nuked-opl3 = { workspace = true }
+rustysynth = { workspace = true }
+s2-formats = { workspace = true }
+s2-sim = { workspace = true }
+serde = { workspace = true }
+thiserror = { workspace = true }
+
+[dev-dependencies]
+s2-data = { workspace = true }
+
+[lints]
+workspace = true

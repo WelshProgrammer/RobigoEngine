@@ -1,0 +1,15 @@
+[package]
+name = "s2-assets"
+description = "Turns parsed Settlers II data into plain buffers ready for the GPU"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+s2-data = { workspace = true }
+s2-formats = { workspace = true }
+thiserror = { workspace = true }
+
+[lints]
+workspace = true

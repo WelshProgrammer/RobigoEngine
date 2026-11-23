@@ -1,0 +1,14 @@
+[package]
+name = "s2-systems"
+description = "Types shared by the game world, the renderer and the interface: the node grid, players, typed ids and the replaceable data tables"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+serde = { workspace = true }
+thiserror = { workspace = true }
+
+[lints]
+workspace = true

@@ -1,0 +1,15 @@
+[package]
+name = "s2-platform"
+description = "Thin safe layer over SDL3 for windows, input and audio"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+raw-window-handle = "0.6"
+thiserror = { workspace = true }
+sdl3-sys = { version = "0.7.2", default-features = false, features = ["build-from-source-static"] }
+
+[lints]
+workspace = true

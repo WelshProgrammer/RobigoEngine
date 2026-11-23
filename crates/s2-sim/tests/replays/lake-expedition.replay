@@ -1,0 +1,125 @@
+# Player 0 builds a harbour and a shipyard on the lake of a generated map, the shipyard builds
+# a ship, and an expedition sails it to a harbour site on the far shore and founds a second
+# harbour there. Written by tests/ships.rs.
+map-file lake.wld
+map-hash 7a4f03efb368539e
+script none
+players all
+animals yes
+goods normal
+waypoints 0
+end 24000
+check 250 3a7d1820a51a9fd3
+check 500 1f9730e8022daad8
+check 750 3ceb39bd91f97fb3
+check 1000 9cace4f7777fa6ab
+check 1250 78dcad1e29230fe6
+check 1500 795c4de5242f13c8
+check 1750 4beb1c546734eb99
+check 2000 835818db2e8a5b3b
+check 2250 b2e0b620a63840ed
+check 2500 b21b2c397b184016
+check 2750 172c098ed6cba7d7
+check 3000 7f558da1c15bd116
+check 3250 3fd6083ce712ebf6
+check 3500 78bb87349d998e57
+check 3750 5fcdf101abcc8d36
+check 4000 dcea5bf87c01a451
+check 4250 390780a76a41bad0
+check 4500 0019846c53653dbc
+check 4750 be2cd2d2dd2a1b09
+check 5000 41e2f86e4955eae0
+check 5250 d48dc1b773478c66
+check 5500 6098a61e118f0d01
+check 5750 4edb702a3c437510
+check 6000 4cfde480701fa6d1
+check 6250 d99cd9ad1e57c451
+check 6500 21624c78ed265be8
+check 6750 368157dbd04870f6
+check 7000 6281dd49dae612f5
+check 7250 7bc31a7ae34cc690
+check 7500 9672ad566fbede28
+check 7750 1ae5a92650b674b6
+check 8000 cfc382934af9aee7
+check 8250 1ea98a3336713554
+check 8500 ae9cea68bc74f7fc
+check 8750 5fbf66427cb79b68
+check 9000 5d3b7bb9b7f876f1
+check 9250 e5048875a75886ce
+check 9500 5c006c2492a1d74a
+check 9750 7109be5ddb7737ae
+check 10000 fe1152698cb7c1ef
+check 10250 77b30565b441ce8b
+check 10500 479eac3289cd6140
+check 10750 c15e067bdd4e566a
+check 11000 625eeca98e5a34d8
+check 11250 90f877d3cf57953b
+check 11500 5fcce53675385bd8
+check 11750 0173f2822211fcb1
+check 12000 8debe3f4caf3fb3d
+check 12250 e5d9ea22b0cb8616
+check 12500 5403f1e5355b6e34
+check 12750 8e6c2199174bb899
+check 13000 186e51a63caaaf68
+check 13250 eb0d9df87d3b941c
+check 13500 c21c4f49d878e344
+check 13750 9588532b8b939f02
+check 14000 254dd57158066d17
+check 14250 8b18c18fe2361762
+check 14500 01a73fba0475628d
+check 14750 07cd7654fee39c80
+check 15000 21eb9a7009c8a18f
+check 15250 bd736e3c7c4577e5
+check 15500 05bcbd2a893c8418
+check 15750 8689413e8af1a374
+check 16000 56fff2133b947f9f
+check 16250 74f94e78cbcae922
+check 16500 8171c8a590a1a1c5
+check 16750 c0a38ad0717b8660
+check 17000 06789a507607949d
+check 17250 77048d7aa6380597
+check 17500 a3a60e6e976637cd
+check 17750 fdf2b67f751b9e10
+check 18000 bfe1ef78f68c3957
+check 18250 652267718b55af75
+check 18500 2d21db0a26d15069
+check 18750 ab60f018680c738b
+check 19000 1bf477dd3d921c72
+check 19250 9a9fe55b0a0a931b
+check 19500 289a66d0ddca10b5
+check 19750 7f22f846f43a0a96
+check 20000 cbfbe3687d2200c1
+check 20250 98a5f244af71404e
+check 20500 22363729df828938
+check 20750 ed0345575f04083c
+check 21000 fd85f7f95ecf77b8
+check 21250 0fad7b5cf7e15891
+check 21500 67ead7cd00117cc1
+check 21750 53f4c2b39c10ffc2
+check 22000 dbb0ead7e8c1049c
+check 22250 1c37f66e86a2b97c
+check 22500 410a095a44a1d4d2
+check 22750 44b2345aaaec40c4
+check 23000 895f737da5fb4775
+check 23250 6a18b34713b1c4a2
+check 23500 4662bb712e721cce
+check 23750 c865cd39dff80afb
+check 24000 7a52844acbb3db0a
+# STEP PLAYER VERB ARGS
+0 0 build 12 11 23
+0 0 road 13 12
+0 0 step west
+0 0 step west
+0 0 step west
+0 0 step north-west
+0 0 step north-west
+0 0 step north-west
+0 0 build 12 14 16
+0 0 road 12 15
+0 0 step north-east
+0 0 step north-west
+0 0 step north-east
+4701 0 shipyard 12 14 ships
+13910 0 expedition 12 11
+17643 0 expedition-sail 0 2
+17724 0 expedition-found 0

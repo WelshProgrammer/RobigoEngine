@@ -1,0 +1,27 @@
+[package]
+name = "s2-render"
+description = "wgpu renderer with an indexed-colour pipeline"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+s2-assets = { workspace = true }
+s2-formats = { workspace = true }
+s2-sim = { workspace = true }
+wgpu = "30.0.1"
+raw-window-handle = "0.6"
+bytemuck = { version = "1", features = ["derive"] }
+pollster = "0.4"
+rayon = { workspace = true }
+bitflags = { workspace = true }
+thiserror = { workspace = true }
+log = { workspace = true }
+png = { workspace = true }
+
+[dev-dependencies]
+s2-data = { workspace = true }
+
+[lints]
+workspace = true

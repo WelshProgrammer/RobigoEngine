@@ -1,0 +1,50 @@
+# Player 0 builds a watchtower at the edge of its land on a generated meadow, fills it with
+# soldiers and attacks player 1's headquarters. Both attackers walk round the lake and die
+# at its flag. Written by tests/battle.rs.
+map-file meadow.wld
+map-hash 2e2eb6f84551fac2
+script none
+players all
+animals yes
+goods normal
+waypoints 0 1
+end 6000
+check 250 f397a5cda0445bde
+check 500 2694749011b65409
+check 750 f893a3923809f49f
+check 1000 e3b886bf8ee7e2fa
+check 1250 21de46b8246538e6
+check 1500 fb543f809b703fa6
+check 1750 e74c58204014b182
+check 2000 290ef6e1a3258eee
+check 2250 ea7b2902e92bf9c1
+check 2500 e950b302ceb4163c
+check 2750 8329eeb5b58274f4
+check 3000 97e8353145a8461b
+check 3250 acd4f0974ddc6cac
+check 3500 6294b22fcc9979c3
+check 3750 ffc839d740e2c8ac
+check 4000 8f7596236c7660f0
+check 4250 0a74ce30e3ddef74
+check 4500 478962e501985ba2
+check 4750 56da137619564d8b
+check 5000 40c2acc10688e4af
+check 5250 5723227c11c0e923
+check 5500 fefaeb66a76c767a
+check 5750 9e2b08efd3b43847
+check 6000 2a2cdd90880493fe
+# STEP PLAYER VERB ARGS
+0 0 military 3 100
+0 0 military 4 100
+0 0 military 5 100
+0 0 military 6 100
+0 0 build 21 20 27
+0 0 road 21 21
+0 0 step west
+0 0 step west
+0 0 step west
+0 0 step north-west
+0 0 step north-west
+0 0 step north-west
+0 0 step north-west
+4297 0 attack 48 48 2 strongest
